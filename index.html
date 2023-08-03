@@ -3,9 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bang</title>
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
+<style>
+    table, th, td {
+      border:1px solid black;
+    }
+</style>
 <body>
-    <h1>techcombankkk</h1>
+    <form action="action_page.php">
+    <h1 style="text-align:center">BTVN Buổi 2</h1>
+    <table style="width:400" cellpadding="5" align="center">
+    <tr>
+        <th colspan="2" style="font-size:26px">
+          Đăng Ký
+        </th>
+    </tr>
+        <tr>
+          <td>Full name</td>
+          <td><input type="text" size="35" placeholder="Nhập Full name"></td>
+        </tr>
+        <tr>
+          <td>Username</td>
+          <td><input type="text" size="35" placeholder="Nhập tên"></td>    
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" size="35" placeholder="Nhập mật khẩu"></td>     
+        </tr>
+        <tr>
+            <td>Nhập lại password</td>
+            <td><input type="password" size="35" placeholder="Nhập lại mật khẩu"></td>   
+          </tr>
+        <tr>
+            <td>Giới tính</td>
+            <td>
+                <input type="radio" id="Nam">Nam
+                <input type="radio" id="Nu">Nữ
+            </td>     
+        </tr>
+        <tr>
+            <td>Ngày sinh</td>
+            <td>
+                <select name="day">
+                    <option>Ngày 1</option>
+                    <option>Ngày 2</option>
+                    <option>Ngày 3</option>
+                    <option>Ngày 30</option>
+                    
+                </select>
+                <select name="month">
+                    <option>Tháng 1</option>
+                    <option>Tháng 2</option>
+                    <option>Tháng 3</option>
+                </select>
+                <select name="year">
+                    <option>Năm 2015</option>
+                    <option>Năm 2016</option>
+                    <option>Năm 2017</option>
+                    <option>Năm 2018</option>
+                    <option>Năm 2019</option>
+                </select>
+            </td>     
+        </tr>  
+        <tr>
+            <td>Địa chỉ</td>
+            <td>
+                <textarea col="20">
+                    </textarea>
+            </td>     
+        </tr>  
+        <tr>
+            <td>Avatar</td>
+            <td><input type="file" name="avarta">
+            </td>     
+        </tr>  
+        <tr>
+            <td>So thich</td>
+            <td>
+                <input type="checkbox">Xem phim
+                <input type="checkbox">Thể thao
+                <input type="checkbox">Web
+            </td>     
+        </tr>  
+        <tr>
+            <td colspan="2" align="center">
+                <input type="button" value="Reset">
+                <input type="button" value="OK">
+            </td>
+        </tr>
+      </table>
+    </form>
 </body>
 </html>
